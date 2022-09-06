@@ -448,7 +448,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.4 | AppleALC.kext</string>
+                    <string>V1.7.5 | AppleALC.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1145,8 +1145,6 @@
                     <string>ForceDisplayRotationInEFI</string>
                 </array>
             </dict>
-            <key>LegacyEnable</key>
-            <false/>
             <key>LegacyOverwrite</key>
             <false/>
             <key>LegacySchema</key>
@@ -1296,6 +1294,8 @@
                     <string>AudioDxe.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>AudioDxe.efi</string>
                 </dict>
@@ -1306,6 +1306,8 @@
                     <string>HfsPlus.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>HfsPlus.efi</string>
                 </dict>
@@ -1316,6 +1318,8 @@
                     <string>OpenCanopy.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenCanopy.efi</string>
                 </dict>
@@ -1326,6 +1330,8 @@
                     <string>OpenRuntime.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
                 </dict>
@@ -1336,6 +1342,8 @@
                     <string>ResetNvramEntry.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
                 </dict>

@@ -5,11 +5,11 @@ EFI premade of OpenCore bootloader for Dell Optiplex 3050 is here!
 
 <img src="https://media.discordapp.net/attachments/321319496990326784/989091420201693225/Zrzut_ekranu_2022-06-22_o_10.55.57.png">
 
-## Current version - OpenCore 0.8.5 DEBUG
+## Current version - OpenCore 0.8.6 DEBUG
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on Dell Optiplex 3050!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.5
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.6
 
 ### SMBIOS:
 Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.

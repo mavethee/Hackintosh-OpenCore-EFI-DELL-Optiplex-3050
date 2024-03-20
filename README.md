@@ -6,7 +6,7 @@ Welcome to the Hackintosh-OpenCore-EFI-DELL-Optiplex-3050 repository! This repos
 
 <img src="https://media.discordapp.net/attachments/321319496990326784/989091420201693225/Zrzut_ekranu_2022-06-22_o_10.55.57.png">
 
-## Current Version - OpenCore 0.9.8 DEBUG
+## Current Version - OpenCore 0.9.9 DEBUG
 
 This repository includes a "Plug-and-Play" EFI configuration for the OpenCore bootloader, as well as all the necessary files to install and run macOS on your Dell Optiplex 3050. For the latest version, please visit the [OpenCore 0.9.8 release](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.8).
 

@@ -35,6 +35,8 @@ Extract, put `EFI` on your USB.
 
 ## Installation:
 
+**NOTE: EFI is totally fine to try out new macOS 15 as of Beta 1**
+
 1. First of all, ensure you're firmware and drivers are generally up to date. Next download the EFI by getting it from assets in `Releases` page or cloning whole repo.
 
 2. It may still boot with EFI as it is just fine but please ensure to dump your own SSDTs for `EFI/OC/ACPI` with [SSDTTime](https://github.com/corpnewt/SSDTTime), remember that every configuration differ even if it's the same model!

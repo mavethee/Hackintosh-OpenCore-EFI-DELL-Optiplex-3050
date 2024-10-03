@@ -1,4 +1,4 @@
-<img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
+<img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48" alt="OpenCore logo"/>
 
 # Hackintosh-OpenCore-EFI-DELL-Optiplex-3050
 
@@ -8,13 +8,27 @@ This repository provides a pre-made EFI setup for the OpenCore bootloader specif
 
 This repository includes a "Plug-and-Play" EFI configuration for the OpenCore bootloader, as well as all the necessary files to install and run macOS on your Dell Optiplex 3050.
 
+## Table of Contents
+
+- [How to download?](#how-to-download)
+- [Installation](#installation)
+- [Credits](#credits)
+
+## How to download?
+
+There are four major ways to obtain an EFI from this repository:
+
+a) Head to [release page](https://github.com/mavethee/Hackintosh-OpenCore-EFI-DELL-Optiplex-3050/releases), expand assets of latest release and download `EFI.zip`.
+
+b) Pressing a download button below:
+
 [![Download](https://img.shields.io/badge/Download-v1.0.0-brightgreen)](https://github.com/mavethee/Hackintosh-OpenCore-EFI-DELL-Optiplex-3050/releases/download/1.0.0/EFI.zip)
 
-## Table of Contents
-- [Cloning the repo](#Cloning-the-repository)
-- [Installation Guide](#installation)
+c) Downloading zipped repository:
 
-## Cloning the repository:
+By selecting `Code` -> `Downaload ZIP`
+
+d) Cloning:
 
 ```sh
 # Clone this repository:
@@ -27,15 +41,20 @@ cd Hackintosh-OpenCore-EFI-DELL-Optiplex-3050
 open .
 ```
 
-OR 
+Finally, extract, put `EFI` on your USB.
 
-`Code` -> `Downaload ZIP`
+## Installation
 
-Extract, put `EFI` on your USB.
+0. **Disclaimer**: This repository is for educational purposes only. I am not responsible for any damage caused to your device. Please proceed with caution.
+I don't provide any help unless you're meeting following requirements:
 
-## Installation:
-
-**NOTE: EFI is totally fine to try out new macOS 15 as of Beta 1**
+    | **This EFI supports only**  | **Dell Optiplex 3050**                                        |
+    |-----------------------------|---------------------------------------------------------------|
+    | **CPU**                     | i3-7100 (**Any Kaby Lake CPUs apply**)                        |
+    | **iGPU**                    | HD 630                                                        |
+    | **dGPU**                    | For dGPUs to work, **remove iGPU args from DeviceProperties** |
+    | **Motherboard**             | DELL's OEM board                                              |
+    | **Supported macOS version** | 15.0 (24A335)                                                 |
 
 1. First of all, ensure you're firmware and drivers are generally up to date. Next download the EFI by getting it from assets in `Releases` page or cloning whole repo.
 
@@ -43,11 +62,15 @@ Extract, put `EFI` on your USB.
 
 3. (Optional) Remove `USBInjectAll.kext` from `EFI/OC/Kexts`, map your own USB config using USBToolBox's [tool](https://github.com/USBToolBox/tool) and its [kext](https://github.com/USBToolBox/kext) referring to this [usage manual](https://github.com/USBToolBox/tool?tab=readme-ov-file#usage)
 
-4. Please be aware that Apple has not removed any of the kexts for Kaby Lake's iGPUs as of the Release Candidate stage of Sonoma. ~~To run Sonoma, you should change your SMBIOS to `iMac19,1`~~. `iMac19,1` is now set by default. The included SMBIOS in this repository is not associated with a purchased Apple device. For your own sake, **it's not recommended to use it**. Re-generate `iMac19,1` SMBIOS for your EFI using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). You just need a invalid or unused SMBIOS to copy-paste the required info, especially if you intend to use iServices.The situation may change in the future, depending on Apple's actions. Thanks to Intel, it appears that spoofing from Kaby Lake to Coffee Lake (KBL -> CFL) is possible so will come in handy if needed.
+4. Please be aware that Apple has not removed any of the kexts for Kaby Lake's iGPUs yet. To run macOS 14+, you should change your SMBIOS to `iMac19,1`, which is now set by default.
+
+5. The included SMBIOS in this repository is not associated with a purchased Apple device. For your own sake, **it's not recommended to use it**. Re-generate `iMac19,1` SMBIOS for your EFI using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). You just need a invalid or unused SMBIOS to copy-paste the required info, especially if you intend to use iServices.
+
+6. The situation may change in the future, depending on Apple's actions. Thanks to Intel, it appears that spoofing from Kaby Lake to Coffee Lake (KBL -> CFL) is possible so will come in handy if needed.
 
 **P.S.**: An updated reference image is needed, so if someone achieves success, please consider contributing. This repository started as a result of boredom in class and now that I've graduated, it's become a bit of a guessing game.
 
-## Credits:
+## Credits
 
 - [AppleALC](https://github.com/acidanthera/AppleALC)
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
@@ -62,4 +85,3 @@ Extract, put `EFI` on your USB.
 - [USBInjectAll](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads)
 - [USBToolBox](https://github.com/USBToolBox)
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
- 

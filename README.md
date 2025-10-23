@@ -4,6 +4,10 @@
 
 This repository provides a pre-made EFI setup for the OpenCore bootloader specifically designed for the Dell Optiplex 3050.
 
+> [!NOTE]
+> This repository is no longer actively maintained. It is recommended to use it as a reference for creating your own custom EFI configuration rather than relying on it for direct installation.
+> I don't have access to this hardware anymore.
+
 ## Current Version - [OpenCore 1.0.5 DEBUG](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.5)
 
 This repository includes a "Plug-and-Play" EFI configuration for the OpenCore bootloader, as well as all the necessary files to install and run macOS on your Dell Optiplex 3050.
@@ -44,17 +48,6 @@ open .
 Finally, extract, put `EFI` on your USB.
 
 ## Installation
-
-0. **Disclaimer**: This repository is for educational purposes only. I am not responsible for any damage caused to your device. Please proceed with caution.
-I don't provide any help unless you're meeting following requirements:
-
-    | **This EFI supports only**  | **Dell Optiplex 3050**                                        |
-    |-----------------------------|---------------------------------------------------------------|
-    | **CPU**                     | i3-7100 (**Any Kaby Lake CPUs apply**)                        |
-    | **iGPU**                    | HD 630                                                        |
-    | **dGPU**                    | For dGPUs to work, **remove iGPU args from DeviceProperties** |
-    | **Motherboard**             | DELL's OEM board                                              |
-    | **Supported macOS version** | 26.0                                                          |
 
 0. **Mandatory** for Tahoe:
    - Remove `USBInjectAll.kext` from `EFI/OC/Kexts`, map your own USB config using USBToolBox's [tool](https://github.com/USBToolBox/tool) and its [kext](https://github.com/USBToolBox/kext) referring to this [usage manual](https://github.com/USBToolBox/tool?tab=readme-ov-file#usage),
